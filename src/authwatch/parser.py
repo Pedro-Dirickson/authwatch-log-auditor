@@ -55,7 +55,8 @@ _SYSLOG_TS = r"(?P<syslog_ts>[A-Z][a-z]{2}\s+\d{1,2}\s+\d{2}:\d{2}:\d{2})"
 _ISO_TS = r"(?P<iso_ts>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:?\d{2})?)"
 
 _SSH_RE = re.compile(
-    rf"^(?:{_SYSLOG_TS}|{_ISO_TS})\s+\S+\s+sshd(?:\[\d+\])?:\s+"
+    # OpenSSH >= 9.8 logs authentication from "sshd-session" instead of "sshd".
+    rf"^(?:{_SYSLOG_TS}|{_ISO_TS})\s+\S+\s+sshd(?:-session)?(?:\[\d+\])?:\s+"
     r"(?P<result>Failed|Accepted)\s+\S+\s+for\s+"
     r"(?P<invalid>invalid user\s+)?(?P<user>.*?)\s+"
     r"from\s+(?P<ip>[0-9A-Fa-f:.]+)\s+port\s+\d+"

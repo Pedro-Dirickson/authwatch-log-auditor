@@ -70,6 +70,13 @@ class SSHParserTests(unittest.TestCase):
         self.assertEqual(e.timestamp, datetime(2026, 11, 24, 1, 2, 3, 123456))
         self.assertEqual(e.source_ip, "2001:db8::1")
 
+    def test_openssh_98_sshd_session_and_journalctl_offset(self):
+        e = parse_ssh_line(
+            "2026-11-24T10:14:04-0300 web01 sshd-session[4321]: Failed password for root from 203.0.113.7 port 22 ssh2"
+        )
+        self.assertEqual(e.timestamp, datetime(2026, 11, 24, 10, 14, 4))
+        self.assertEqual((e.user, e.status), ("root", FAILED))
+
     def test_ignores_unrelated_lines(self):
         self.assertIsNone(parse_ssh_line("Nov 24 03:12:45 web01 CRON[1]: pam_unix(cron:session): session opened"))
         self.assertIsNone(parse_ssh_line("Nov 24 03:12:45 web01 sshd[1]: Connection closed by 1.2.3.4 port 22"))
