@@ -1,0 +1,51 @@
+Nov 24 00:17:01 web01 CRON[20211]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov 24 00:17:01 web01 CRON[20211]: pam_unix(cron:session): session closed for user root
+Nov 24 01:42:13 web01 sshd[20388]: Connection closed by 45.79.12.201 port 51022 [preauth]
+Nov 24 03:17:44 web01 sshd[20512]: Accepted password for backup_admin from 91.214.124.33 port 50412 ssh2
+Nov 24 03:17:44 web01 sshd[20512]: pam_unix(sshd:session): session opened for user backup_admin(uid=1003) by (uid=0)
+Nov 24 03:18:02 web01 sudo: backup_admin : TTY=pts/0 ; PWD=/home/backup_admin ; USER=root ; COMMAND=/usr/bin/tar czf /tmp/db.tgz /var/lib/postgresql
+Nov 24 03:26:51 web01 sshd[20512]: pam_unix(sshd:session): session closed for user backup_admin
+Nov 24 06:25:01 web01 CRON[20901]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Nov 24 06:25:03 web01 CRON[20901]: pam_unix(cron:session): session closed for user root
+Nov 24 08:02:11 web01 sshd[21044]: Accepted publickey for pedro from 192.168.10.25 port 53110 ssh2: ED25519 SHA256:q3Vt8m1kZbW0yJxP2sR9uLh7cN4aE6fT5gD1oK8iXzY
+Nov 24 08:02:11 web01 sshd[21044]: pam_unix(sshd:session): session opened for user pedro(uid=1000) by (uid=0)
+Nov 24 08:15:37 web01 sshd[21102]: Failed password for maria from 192.168.10.41 port 53322 ssh2
+Nov 24 08:15:49 web01 sshd[21102]: Accepted password for maria from 192.168.10.41 port 53322 ssh2
+Nov 24 08:15:49 web01 sshd[21102]: pam_unix(sshd:session): session opened for user maria(uid=1001) by (uid=0)
+Nov 24 08:30:00 web01 sudo: pedro : TTY=pts/1 ; PWD=/home/pedro ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Nov 24 09:05:12 web01 sshd[21330]: Accepted publickey for deploy from 10.0.5.12 port 40122 ssh2: RSA SHA256:Zk2pL8vQe1nR4tYu7iO0aS3dF6gH9jK2lM5nB8vC1xQ
+Nov 24 09:05:14 web01 sshd[21330]: pam_unix(sshd:session): session opened for user deploy(uid=1002) by (uid=0)
+Nov 24 09:06:40 web01 sshd[21330]: pam_unix(sshd:session): session closed for user deploy
+Nov 24 10:14:02 web01 sshd[21655]: Invalid user admin from 185.220.101.47 port 41822
+Nov 24 10:14:04 web01 sshd[21655]: Failed password for invalid user admin from 185.220.101.47 port 41822 ssh2
+Nov 24 10:14:09 web01 sshd[21657]: Failed password for root from 185.220.101.47 port 41840 ssh2
+Nov 24 10:14:15 web01 sshd[21659]: Failed password for root from 185.220.101.47 port 41858 ssh2
+Nov 24 10:14:20 web01 sshd[21661]: Invalid user oracle from 185.220.101.47 port 41870
+Nov 24 10:14:22 web01 sshd[21661]: Failed password for invalid user oracle from 185.220.101.47 port 41870 ssh2
+Nov 24 10:14:28 web01 sshd[21663]: Failed password for root from 185.220.101.47 port 41886 ssh2
+Nov 24 10:14:33 web01 sshd[21665]: Invalid user test from 185.220.101.47 port 41902
+Nov 24 10:14:35 web01 sshd[21665]: Failed password for invalid user test from 185.220.101.47 port 41902 ssh2
+Nov 24 10:14:41 web01 sshd[21667]: Failed password for root from 185.220.101.47 port 41918 ssh2
+Nov 24 10:14:47 web01 sshd[21669]: Invalid user ubuntu from 185.220.101.47 port 41934
+Nov 24 10:14:49 web01 sshd[21669]: Failed password for invalid user ubuntu from 185.220.101.47 port 41934 ssh2
+Nov 24 10:14:55 web01 sshd[21671]: Failed password for root from 185.220.101.47 port 41950 ssh2
+Nov 24 10:15:01 web01 sshd[21673]: Failed password for root from 185.220.101.47 port 41966 ssh2
+Nov 24 10:15:06 web01 sshd[21675]: Invalid user postgres from 185.220.101.47 port 41982
+Nov 24 10:15:08 web01 sshd[21675]: Failed password for invalid user postgres from 185.220.101.47 port 41982 ssh2
+Nov 24 10:15:14 web01 sshd[21677]: Failed password for root from 185.220.101.47 port 41998 ssh2
+Nov 24 10:15:20 web01 sshd[21679]: Failed password for root from 185.220.101.47 port 42014 ssh2
+Nov 24 10:15:26 web01 sshd[21681]: Failed password for root from 185.220.101.47 port 42030 ssh2
+Nov 24 10:15:31 web01 sshd[21683]: Disconnecting authenticating user root 185.220.101.47 port 42030: Too many authentication failures [preauth]
+Nov 24 10:15:31 web01 sshd[21683]: PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=185.220.101.47  user=root
+Nov 24 10:40:18 web01 sshd[21102]: pam_unix(sshd:session): session closed for user maria
+Nov 24 11:22:07 web01 sshd[22010]: Accepted publickey for pedro from 192.168.10.25 port 53790 ssh2: ED25519 SHA256:q3Vt8m1kZbW0yJxP2sR9uLh7cN4aE6fT5gD1oK8iXzY
+Nov 24 11:22:07 web01 sshd[22010]: pam_unix(sshd:session): session opened for user pedro(uid=1000) by (uid=0)
+Nov 24 12:00:01 web01 CRON[22301]: pam_unix(cron:session): session opened for user www-data(uid=33) by (uid=0)
+Nov 24 12:00:02 web01 CRON[22301]: pam_unix(cron:session): session closed for user www-data
+Nov 24 13:47:55 web01 sshd[22618]: Failed password for deploy from 10.0.5.12 port 40388 ssh2
+Nov 24 13:48:01 web01 sshd[22618]: Accepted password for deploy from 10.0.5.12 port 40388 ssh2
+Nov 24 14:31:29 web01 sshd[22844]: Connection closed by 103.145.13.90 port 60112 [preauth]
+Nov 24 15:10:43 web01 sshd[23001]: Accepted publickey for maria from 192.168.10.41 port 54001 ssh2: ED25519 SHA256:bN7cV2xZ9aS4dF1gH6jK3lQ8wE5rT0yU2iO7pA4sD9f
+Nov 24 17:58:20 web01 sshd[22010]: pam_unix(sshd:session): session closed for user pedro
+Nov 24 18:03:12 web01 sshd[23450]: Accepted publickey for pedro from 192.168.10.25 port 54620 ssh2: ED25519 SHA256:q3Vt8m1kZbW0yJxP2sR9uLh7cN4aE6fT5gD1oK8iXzY
+Nov 24 18:20:44 web01 sshd[23450]: pam_unix(sshd:session): session closed for user pedro
